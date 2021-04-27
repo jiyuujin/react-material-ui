@@ -1,6 +1,6 @@
 {
-  "name": "nekohack-ui",
-  "version": "2.0.0",
+  "name": "@nekohack/material-ui",
+  "version": "1.0.0",
   "description": "",
   "private": false,
   "main": "lib/index.js",
@@ -14,10 +14,10 @@
   "author": "jiyuujin",
   "repository": {
     "type": "git",
-    "url": "https://github.com/jiyuujin/nekohack-ui.git"
+    "url": "https://github.com/jiyuujin/react-material-ui.git"
   },
   "bugs": {
-    "url": "https://github.com/jiyuujin/nekohack-ui/issues"
+    "url": "https://github.com/jiyuujin/react-material-ui/issues"
   },
   "keywords": [
     "react",
@@ -41,12 +41,13 @@
     "@babel/preset-env": "7.12.17",
     "@babel/preset-react": "7.12.7",
     "@babel/preset-typescript": "7.12.13",
+    "@material-ui/core": "^4.11.3",
     "@nekohack/eslint-config-react": "0.3.0",
     "@storybook/addon-a11y": "^6.1.18",
     "@storybook/addon-actions": "6.1.18",
     "@storybook/react": "6.1.16",
     "@types/jest": "26.0.20",
-    "@types/node": "14.14.28",
+    "@types/node": "15.0.1",
     "@types/prop-types": "15.7.3",
     "@types/react": "17.0.2",
     "@types/react-dom": "17.0.1",
