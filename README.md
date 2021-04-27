@@ -3,28 +3,28 @@
 </p>
 
 <p align="center">
-  <a href="https://npmjs.com/package/react-material-ui">
-    <img alt="" src="https://img.shields.io/npm/v/react-material-ui/latest.svg?style=flat-square">
+  <a href="https://npmjs.com/package/@nekohack/material-ui">
+    <img alt="" src="https://img.shields.io/npm/v/@nekohack/material-ui/latest.svg?style=flat-square">
   </a>
   <!--
-  <a href="https://npmjs.com/package/react-material-ui">
-    <img alt="" src="https://img.shields.io/npm/v/react-material-ui/beta.svg?style=flat-square">
+  <a href="https://npmjs.com/package/@nekohack/material-ui">
+    <img alt="" src="https://img.shields.io/npm/v/@nekohack/material-ui/beta.svg?style=flat-square">
   </a>
   -->
-  <a href="https://npmjs.com/package/react-material-ui">
-    <img alt="" src="https://img.shields.io/npm/dt/react-material-ui.svg?style=flat-square">
+  <a href="https://npmjs.com/package/@nekohack/material-ui">
+    <img alt="" src="https://img.shields.io/npm/dt/@nekohack/material-ui.svg?style=flat-square">
   </a>
 </p>
 
 ## Installation
 
-Install [react-material-ui](https://www.npmjs.com/package/react-material-ui) package.
+Install [@nekohack/material-ui](https://www.npmjs.com/package/@nekohack/material-ui) package.
 
 ```bash
-npm i react-material-ui
+npm i @nekohack/material-ui
 npm i react react-dom styled-components
 
-yarn add react-material-ui
+yarn add @nekohack/material-ui
 yarn add react react-dom styled-components
 ```
 
@@ -35,7 +35,7 @@ yarn add react react-dom styled-components
 ```tsx
 import * as React from 'react'
 
-import { MaterialButton } from 'react-material-ui'
+import { MaterialButton } from '@nekohack/material-ui'
 
 export const App = () => {
     const submit = () => {
@@ -59,7 +59,7 @@ export const App = () => {
 ```tsx
 import * as React from 'react'
 
-import { MaterialInput } from 'react-material-ui'
+import { MaterialInput } from '@nekohack/material-ui'
 
 export const App = () => {
     const [value, setValue] = React.useState('Input')
@@ -89,7 +89,7 @@ export const App = () => {
 ```tsx
 import * as React from 'react'
 
-import { MaterialLabel } from 'react-material-ui'
+import { MaterialLabel } from '@nekohack/material-ui'
 
 export const App = () => {
     return (
@@ -109,7 +109,7 @@ export const App = () => {
 ```tsx
 import * as React from 'react'
 
-import { MaterialSelect } from 'react-material-ui'
+import { MaterialSelect } from '@nekohack/material-ui'
 
 const options = [
     {
