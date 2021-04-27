@@ -1,0 +1,14 @@
+storybook-static
+/node_modules
+package-lock.json
+yarn.lock
+
+dist
+
+lib/
+esm/
+
+.cache
+.DS_Store
+
+coverage
