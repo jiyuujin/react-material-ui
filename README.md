@@ -1,28 +1,30 @@
 <p align="center">
-  <a href="https://npmjs.com/package/nekohack-ui"><img src="https://i.imgur.com/jGQJLC5.png" alt="nekohack-ui" title="nekohack-ui"/></a>　
+  React Material UI
 </p>
 
 <p align="center">
-  <a href="https://npmjs.com/package/nekohack-ui">
-    <img alt="" src="https://img.shields.io/npm/v/nekohack-ui/latest.svg?style=flat-square">
+  <a href="https://npmjs.com/package/react-material-ui">
+    <img alt="" src="https://img.shields.io/npm/v/react-material-ui/latest.svg?style=flat-square">
   </a>
-  <a href="https://npmjs.com/package/nekohack-ui">
-    <img alt="" src="https://img.shields.io/npm/v/nekohack-ui/beta.svg?style=flat-square">
+  <!--
+  <a href="https://npmjs.com/package/react-material-ui">
+    <img alt="" src="https://img.shields.io/npm/v/react-material-ui/beta.svg?style=flat-square">
   </a>
-  <a href="https://npmjs.com/package/nekohack-ui">
-    <img alt="" src="https://img.shields.io/npm/dt/nekohack-ui.svg?style=flat-square">
+  -->
+  <a href="https://npmjs.com/package/react-material-ui">
+    <img alt="" src="https://img.shields.io/npm/dt/react-material-ui.svg?style=flat-square">
   </a>
 </p>
 
 ## Installation
 
-Install [nekohack-ui](https://www.npmjs.com/package/nekohack-ui) package.
+Install [react-material-ui](https://www.npmjs.com/package/react-material-ui) package.
 
 ```bash
-npm i nekohack-ui
+npm i react-material-ui
 npm i react react-dom styled-components
 
-yarn add nekohack-ui
+yarn add react-material-ui
 yarn add react react-dom styled-components
 ```
 
@@ -33,14 +35,14 @@ yarn add react react-dom styled-components
 ```tsx
 import * as React from 'react'
 
-import { NekoButton } from 'nekohack-ui'
+import { MaterialButton } from 'react-material-ui'
 
 export const App = () => {
     const submit = () => {
         //
     }
     return (
-        <NekoButton onClick={submit}>Button</NekoButton>
+        <MaterialButton onClick={submit}>Button</MaterialButton>
     )
 }
 ```
@@ -57,12 +59,12 @@ export const App = () => {
 ```tsx
 import * as React from 'react'
 
-import { NekoInput } from 'nekohack-ui'
+import { MaterialInput } from 'react-material-ui'
 
 export const App = () => {
     const [value, setValue] = React.useState('Input')
     return (
-        <NekoInput value={value} onChange={setValue} />
+        <MaterialInput value={value} onChange={setValue} />
     )
 }
 ```
@@ -78,6 +80,8 @@ export const App = () => {
 | value | `String` | `` |
 | placeholder | `String` | `` |
 | password | `String` | `` |
+| targets | `Array<String>` | `[]` |
+| multiline | `Boolean` | `false` |
 | onChange | `Function` | `` |
 
 ### Label
@@ -85,11 +89,11 @@ export const App = () => {
 ```tsx
 import * as React from 'react'
 
-import { NekoLabel } from 'nekohack-ui'
+import { MaterialLabel } from 'react-material-ui'
 
 export const App = () => {
     return (
-        <NekoLabel>Label</NekoLabel>
+        <MaterialLabel>Label</MaterialLabel>
     )
 }
 ```
@@ -105,7 +109,7 @@ export const App = () => {
 ```tsx
 import * as React from 'react'
 
-import { NekoSelect } from 'nekohack-ui'
+import { MaterialSelect } from 'react-material-ui'
 
 const options = [
     {
@@ -125,7 +129,7 @@ const options = [
 export const App = () => {
     const [value, setValue] = React.useState(1)
     return (
-        <NekoSelect options={options} value={value} onChange={setValue} />
+        <MaterialSelect options={options} value={value} onChange={setValue} />
     )
 }
 ```
@@ -136,7 +140,6 @@ export const App = () => {
 |:---|:---|:---|
 | id | `String` | `` |
 | label | `String` | `` |
-| explain | `String` | `` |
 | options | `Array<{ value: number text: string}>` | `` |
 | value | `Number` | `` |
 | onChange | `Function` | `` |

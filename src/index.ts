@@ -1,4 +1,4 @@
-export { Button as NekoButton } from './components/button'
-export { Input as NekoInput } from './components/input'
-export { Label as NekoLabel } from './components/label'
-export { Select as NekoSelect } from './components/select'
+export { Button as MaterialButton } from './components/button'
+export { Input as MaterialInput } from './components/input'
+export { Label as MaterialLabel } from './components/label'
+export { Select as MaterialSelect } from './components/select'
