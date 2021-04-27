@@ -1,60 +1,6 @@
 import { FC, useState } from 'react'
 import styled from 'styled-components'
-
-const InputStyle = styled.input`
-    appearance: none;
-    background: transparent;
-    padding: 0.8rem 0.2rem;
-    background-color: #fff;
-    color: #000;
-    z-index: 1;
-    border: 1px solid #007bc7;
-    border-radius: 4px;
-    outline: 0;
-    line-height: 1;
-
-    :placeholder-shown {
-        color: #ddd;
-        font-style: italic;
-        font-weight: 100;
-    }
-
-    ::-webkit-input-placeholder {
-        color: #ddd;
-        font-style: italic;
-        font-weight: 100;
-    }
-
-    :-moz-placeholder {
-        color: #ddd;
-        font-style: italic;
-        font-weight: 100;
-    }
-
-    ::-moz-placeholder {
-        color: #ddd;
-        font-style: italic;
-        font-weight: 100;
-    }
-
-    :-ms-input-placeholder {
-        color: #ddd;
-        font-style: italic;
-        font-weight: 100;
-    }
-`
-
-const TextareaStyle = styled.textarea`
-    appearance: none;
-    background: transparent;
-    padding: 0.8rem 0.2rem;
-    background-color: #fff;
-    color: #000;
-    z-index: 1;
-    border: 1px solid #007bc7;
-    border-radius: 4px;
-    outline: 0;
-`
+import { TextField, OutlinedInput } from '@material-ui/core'
 
 const SuggestListStyle = styled.ul`
     padding: 0 4px;
@@ -75,29 +21,23 @@ const SuggestListItemStyle = styled.li`
 
 export type InputProps = {
     id?: string
-    role?: string
     label?: string
-    explain?: string
     value: string
     placeholder?: string
     password?: boolean
     targets?: string[]
-    rows?: number
-    multiple?: boolean
+    multiline?: boolean
     onChange: Function
 }
 
 export const Input: FC<InputProps> = ({
     id,
-    role,
     label,
-    explain,
     value,
     placeholder = '',
     password = false,
     targets = [],
-    rows = 0,
-    multiple = false,
+    multiline = false,
     onChange,
 }) => {
     let [suggests, setSuggests] = useState([])
@@ -122,18 +62,26 @@ export const Input: FC<InputProps> = ({
 
     return (
         <>
-            {!multiple ? (
+            {password ? (
+                <OutlinedInput
+                    id={id}
+                    type="password"
+                    value={value}
+                    placeholder={placeholder}
+                    onChange={handleInput}
+                    labelWidth={70}
+                />
+            ) : (
                 <>
-                    <InputStyle
-                        id={id}
-                        role={role}
-                        aria-label={label}
-                        aria-labelledby={explain}
-                        value={value}
-                        placeholder={placeholder}
-                        type={!password ? 'text' : 'password'}
-                        onChange={handleInput}
-                    />
+                    <form noValidate autoComplete="off">
+                        <TextField
+                            id={id}
+                            label={label}
+                            placeholder={placeholder}
+                            multiline
+                            onChange={handleInput}
+                        />
+                    </form>
                     {isShow && (
                         <SuggestListStyle>
                             {value &&
@@ -148,18 +96,9 @@ export const Input: FC<InputProps> = ({
                         </SuggestListStyle>
                     )}
                 </>
-            ) : (
-                <TextareaStyle
-                    id={id}
-                    aria-label={label}
-                    aria-labelledby={explain}
-                    value={value}
-                    rows={rows}
-                    onChange={handleInput}
-                />
             )}
         </>
     )
 }
 
-Input.displayName = 'NekoInput'
+Input.displayName = 'MaterialInput'
