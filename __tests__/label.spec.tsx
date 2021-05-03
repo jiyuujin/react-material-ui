@@ -3,13 +3,13 @@ import Enzyme, { shallow } from 'enzyme'
 
 Enzyme.configure({ adapter: new Adapter() })
 
-import { Label as NekoLabel } from '../src/components/label'
+import { Label as MaterialLabel } from '../src/components/label'
 
 describe('Label', () => {
     let wrapper
 
     beforeEach(() => {
-        wrapper = shallow(<NekoLabel>Label</NekoLabel>)
+        wrapper = shallow(<MaterialLabel>Label</MaterialLabel>)
     })
 
     it('should render without errors', () => {

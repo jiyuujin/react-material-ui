@@ -3,7 +3,7 @@ import Enzyme, { shallow } from 'enzyme'
 
 Enzyme.configure({ adapter: new Adapter() })
 
-import { Select as NekoSelect } from '../src/components/select'
+import { Select as MaterialSelect } from '../src/components/select'
 
 const options = [
     {
@@ -29,7 +29,7 @@ describe('Select', () => {
 
     beforeEach(() => {
         wrapper = shallow(
-            <NekoSelect options={options} value={1} onChange={setValue} />
+            <MaterialSelect options={options} value={1} onChange={setValue} />
         )
     })
 

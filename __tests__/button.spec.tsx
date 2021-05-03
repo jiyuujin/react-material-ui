@@ -3,7 +3,7 @@ import Enzyme, { shallow } from 'enzyme'
 
 Enzyme.configure({ adapter: new Adapter() })
 
-import { Button as NekoButton } from '../src/components/button'
+import { Button as MaterialButton } from '../src/components/button'
 
 const submit = () => {
     console.log('clicked')
@@ -13,7 +13,7 @@ describe('Button', () => {
     let wrapper
 
     beforeEach(() => {
-        wrapper = shallow(<NekoButton onClick={submit}>OK</NekoButton>)
+        wrapper = shallow(<MaterialButton onClick={submit}>OK</MaterialButton>)
     })
 
     it('should render without errors', () => {
