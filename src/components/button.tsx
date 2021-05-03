@@ -1,22 +1,19 @@
 import { FC } from 'react'
-import { Button as MaterialButton } from '@material-ui/core'
+import { Button as MaterialButton, PropTypes } from '@material-ui/core'
 
 export type ButtonProps = {
+    color?: PropTypes.Color
     children: React.ReactNode
     onClick: Function
 }
 
-export const Button: FC<ButtonProps> = ({ children, onClick }) => {
+export const Button: FC<ButtonProps> = ({ color, children, onClick }) => {
     const handleClick = (e: any) => {
         onClick()
     }
 
     return (
-        <MaterialButton
-            variant="contained"
-            color="primary"
-            onClick={handleClick}
-        >
+        <MaterialButton variant="contained" color={color} onClick={handleClick}>
             {children}
         </MaterialButton>
     )

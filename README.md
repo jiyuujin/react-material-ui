@@ -42,7 +42,14 @@ export const App = () => {
         //
     }
     return (
+        <>
+            {/* Normal Button */}
         <MaterialButton onClick={submit}>Button</MaterialButton>
+            {/* Primary Button */}
+            <MaterialButton color={'primary'} onClick={submit}>Button</MaterialButton>
+            {/* Secondary Button */}
+            <MaterialButton color={'secondary'} onClick={submit}>Button</MaterialButton>
+        </>
     )
 }
 ```
@@ -51,6 +58,7 @@ export const App = () => {
 
 | # | Type | Default |
 |:---|:---|:---|
+| color | `PropTypes.Color` | `` |
 | children | `React.ReactNode` | `` |
 | onClick | `Function` | `` |
 

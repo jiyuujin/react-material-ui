@@ -1,5 +1,10 @@
 # CHANGELOG
 
+## `v1.1.0`
+
+### [feat]
+Enable to make use of the color in buttons
+
 ## `v1.0.0`
 
 ### [feat]
