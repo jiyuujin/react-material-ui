@@ -1,8 +1,6 @@
-<p align="center">
-  React Material UI
-</p>
+# React Material UI
 
-<p align="center">
+<p align="left">
   <a href="https://npmjs.com/package/@nekohack/material-ui">
     <img alt="" src="https://img.shields.io/npm/v/@nekohack/material-ui/latest.svg?style=flat-square">
   </a>
@@ -44,7 +42,7 @@ export const App = () => {
     return (
         <>
             {/* Normal Button */}
-        <MaterialButton onClick={submit}>Button</MaterialButton>
+            <MaterialButton onClick={submit}>Button</MaterialButton>
             {/* Primary Button */}
             <MaterialButton color={'primary'} onClick={submit}>Button</MaterialButton>
             {/* Secondary Button */}

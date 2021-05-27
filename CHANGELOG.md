@@ -1,5 +1,10 @@
 # CHANGELOG
 
+## `v1.1.1`
+
+### [update]
+Update for readme
+
 ## `v1.1.0`
 
 ### [feat]
