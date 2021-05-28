@@ -1,5 +1,10 @@
 # CHANGELOG
 
+## `v1.4.0`
+
+### [update]
+Update for bundler plugins
+
 ## `v1.3.0`
 
 ### [update]
