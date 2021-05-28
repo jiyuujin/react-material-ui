@@ -1,5 +1,10 @@
 # CHANGELOG
 
+## `v1.4.1`
+
+### [update]
+Update for purgecss-webpack-plugin
+
 ## `v1.4.0`
 
 ### [update]
