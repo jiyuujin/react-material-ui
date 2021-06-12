@@ -1,5 +1,10 @@
 # CHANGELOG
 
+## `v1.6.0`
+
+### [update]
+Delete dependabot
+
 ## `v1.5.0`
 
 ### [update]
